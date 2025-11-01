@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Number </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .hero {
+      position: relative;
+      background-image: url('Disaster_Girl.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: 'Kanit', sans-serif;
+    }
+
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); 
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Guess Number Project</h1>
+      <a href="#projects" class="btn">click me</a>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>งานของพวกเรา</h2>
+    <div class="project-grid">
+
+      <!-- Card 1 -->
+      <a href="about.html" class="card link-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5gJeJBoFMpbr9McfIlVloGOGphaZaNmkuw&s" alt="Project 1">
+        <div class="card-content">
+          <h3>About Project</h3>
+          <span class="tag">About</span>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="tools.html" class="card link-card">
+        <img src="arduinomeme.jpg" alt="Project 2">
+        <div class="card-content">
+          <h3>Tools & Libraries</h3>
+          <span class="tag">Libraries</span>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="https://youtu.be/H2faqazxO2o" target="_blank" class="card link-card">
+        <img src="spider.jpg" alt="Video">
+        <div class="card-content">
+          <h3>Video Presentation</h3>
+          <span class="tag">Presentation</span>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="poster.html" class="card link-card">
+        <img src="roblox-face-meme.jpg" alt="Poster">
+        <div class="card-content">
+          <h3>Poster</h3>
+          <span class="tag">Poster</span>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="https://github.com/k9g-fr/PC-guess-num-project" target="_blank" class="card link-card">
+        <img src="GitHub-Mark-ea2971cee799.png" alt="GitHub">
+        <div class="card-content">
+          <h3>GitHub Repository</h3>
+          <span class="tag">GitHub</span>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="source.html" class="card link-card">
+        <img src="code.jpg" alt="Source Code">
+        <div class="card-content">
+          <h3>Source Code</h3>
+          <span class="tag">Arduino Code</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Guess Number Project | Physical Computing</p>
+  </footer>
+
+</body>
+</html>

@@ -1,5 +1,87 @@
-#include <LiquidCrystal_I2C.h>
-#include <Wire.h>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Code - Guess Number</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Prompt", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #1e3c72;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    a.back-btn:hover {
+      background: #2a5298;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Source Code</h1>
+    <p>โค้ดต้นฉบับของโปรเจกต์ Guess Number (Arduino)</p>
+  </header>
+
+  <div class="content">
+    <pre>
+#include &lt;LiquidCrystal_I2C.h&gt;
+#include &lt;Wire.h&gt;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
@@ -20,8 +102,7 @@ String getInputString() {
       if (c == '\n' || c == '\r') {
         if (s.length() > 0)
           return s;
-      }
-      else if (c >= '0' && c <= '9') {
+      } else if (c >= '0' && c <= '9') {
         s += c;
         Serial.print(c);
       }
@@ -128,7 +209,6 @@ void playGame(int maxNum, int lives) {
   showLives(lives);
 
   while (lives > 0) {
-
     Serial.println("\nEnter your guess (number only): ");
     String s = getInputString();
     guess = s.toInt();
@@ -186,3 +266,10 @@ void showLives(int lives) {
     lcd.print((char)3);
   }
 }
+    </pre>
+
+    <a href="index.html" class="back-btn">⬅ กลับหน้าหลัก</a>
+  </div>
+
+</body>
+</html>
