@@ -1,6 +1,6 @@
 # Project Guessing Master
 
-##Our poster
+## Our poster
 ![Image](https://github.com/k9g-fr/PC-guess-num-project/blob/119356bfa93fe4170517cb47e6c1cb6d47aa7ce9/poster.png)
 
 ## Contributors
