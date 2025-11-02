@@ -155,4 +155,64 @@ footer {
   cursor: pointer;
 }
 
+.projects {
+    padding: 60px 20px;
+    text-align: center;
+}
 
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Kanit', sans-serif; /* ถ้าใช้ Font นี้ */
+}
+
+/* 🔥 โค้ดสำคัญสำหรับการเรียงเป็นตาราง (Grid) 🔥 */
+.project-grid {
+    display: grid;
+    /* จัดให้มี 3 คอลัมน์ และแต่ละคอลัมน์กว้างเท่ากัน */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* ระยะห่างระหว่างการ์ด */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* กำหนดความสูงรูปภาพให้เท่ากัน */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
