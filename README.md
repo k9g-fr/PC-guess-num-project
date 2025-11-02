@@ -1,4 +1,4 @@
-# Project Guess Number
+# Project Guessing Master
 This is project is bla bla bla
 
 ## Contributors
