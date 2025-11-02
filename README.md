@@ -1,5 +1,7 @@
 # Project Guessing Master
-This is project is bla bla bla
+
+##Our poster
+![Image](https://github.com/k9g-fr/PC-guess-num-project/blob/119356bfa93fe4170517cb47e6c1cb6d47aa7ce9/poster.png)
 
 ## Contributors
 ![Image](https://github.com/user-attachments/assets/8cfcff7e-9a8d-4a6e-bc54-223c960cd161)
